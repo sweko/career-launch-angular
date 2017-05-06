@@ -1,0 +1,15 @@
+<h1>
+  {{title}}
+</h1>
+
+<ul>
+  <li *ngFor="let b of brojki">{{b}}</li>
+</ul>
+
+<button (click)="addNumber()">Add Number</button>
+
+<hr/>
+
+<div>
+  <to-do *ngFor="let text of texts" [text]="text"></to-do>
+</div>

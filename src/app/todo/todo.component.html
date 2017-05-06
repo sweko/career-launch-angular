@@ -1,0 +1,9 @@
+<div>
+  <input type="checkbox" />
+  <span *ngIf="!isEditMode">{{ text }}</span>
+  <button *ngIf="!isEditMode" (click)="setEditMode()">Edit</button>
+  <br />
+  <input *ngIf="isEditMode" type="text" [(ngModel)]="text"/>
+  <button *ngIf="isEditMode" (click)="setViewMode()">Save</button>
+</div>
+<hr />
